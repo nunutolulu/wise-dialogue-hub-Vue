@@ -1,7 +1,13 @@
-wise-dialogue-hub vue版本
+# wise-dialogue-hub vue版本
 
-npm run start
+## 运行
 
-npm run build
+`npm run start`
 
-npm run test
+## 打包
+
+`npm run build`
+
+## 测试
+
+`npm run test`
