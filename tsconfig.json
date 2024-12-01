@@ -1,0 +1,26 @@
+// vue\ts
+{
+	"compilerOptions": {
+		"target": "ES5", // 可以兼容巨大部分的浏览器了
+		"module": "ESNext", // 用来支持较新的模板语法
+		"sourceMap": true, // 方便调试
+		"strict": true,
+		"jsx": "preserve", // 处理JSX语法，没有的话可以移除
+		"importHelpers": true, //
+		"moduleResolution": "node",
+		"esModuleInterop": true, // experimentalDecorators和esModuleInterop用于支持装饰器和更好的模块互操作性
+		"allowSyntheticDefaultImports": true,
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["src/*"]
+		}
+	},
+	"include": [
+		// 编译那些文件的ts
+		"src/**/*.ts",
+		"src/**/*.tsx",
+		"src/**/*.vue"
+	],
+	"exclude": ["node_modules"],
+	"types": ["jest"]
+}
