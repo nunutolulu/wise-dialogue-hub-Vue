@@ -21,9 +21,5 @@ button {
 	color: skyblue;
 	border: 1px solid gray;
 	border-radius: 4px;
-
-	/* &:hover {
-		color: blue;
-	} */
 }
 </style>
