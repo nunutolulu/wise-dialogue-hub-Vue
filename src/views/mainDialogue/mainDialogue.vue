@@ -1,17 +1,27 @@
 <template>
-	<div>
-		<div :class="`${ns}-title`"><span>wise-dialogue-hub</span></div>
-
+	<div :class="`${ns}`">
+		<div :class="`${ns}-title`">
+			<span :class="`${ns}-versionTag`">wise-dialogue-hub</span>
+		</div>
+		<div :class="`${ns}-interaction`">
+			<div :class="`${ns}-dialogue`">
+				<single-dialogue></single-dialogue>
+			</div>
+		</div>
 		<div :class="`${ns}-input`">
 			<el-input
 				v-model="inputInfo"
 				placeholder="请输入"
-				clearable></el-input>
+				:prefix-icon="Search"
+				clearable>
+			</el-input>
 		</div>
 	</div>
 </template>
 
 <script setup lang="ts">
+import singleDialogue from './singleDialogue/singleDialogue.vue'
+import {Search} from '@element-plus/icons-vue'
 import {ref} from 'vue'
 
 const ns = 'main-dialogue'

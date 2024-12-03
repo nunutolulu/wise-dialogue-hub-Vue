@@ -10,11 +10,16 @@
 		<!-- 右侧下拉菜单 -->
 		<div :class="`${ns}-userHandle`">
 			<el-dropdown @command="handleCommand" placement="top-start">
-				<el-icon class="el-icon--right"><arrow-down /></el-icon>
+				<span
+					><el-icon class="el-icon--right"><arrow-down /></el-icon
+				></span>
 				<template #dropdown>
 					<el-dropdown-menu>
-						<el-dropdown-item :icon="CloseBold" command="userLogout"
+						<el-dropdown-item icon-size="14" command="userLogout"
 							>退出登录</el-dropdown-item
+						>
+						<el-dropdown-item icon-size="20" command="userInfoShow"
+							>个人账号</el-dropdown-item
 						>
 					</el-dropdown-menu>
 				</template>
@@ -24,8 +29,8 @@
 </template>
 
 <script setup lang="ts">
-import { userInfoMockData } from './config'
-import { UserFilled, ArrowDown, CloseBold } from '@element-plus/icons-vue'
+import {userInfoMockData} from './config'
+import {UserFilled, ArrowDown} from '@element-plus/icons-vue'
 // import { ElMessage } from 'element-plus'
 const ns = 'userInfo'
 
