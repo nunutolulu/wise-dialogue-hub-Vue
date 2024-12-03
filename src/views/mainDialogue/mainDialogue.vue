@@ -18,14 +18,6 @@ const ns = 'main-dialogue'
 const inputInfo = ref('')
 </script>
 
-<style>
-.main-dialogue-title {
-	font-size: 36px;
-}
-.main-dialogue-input {
-	position: fixed;
-	bottom: 0;
-	height: 50px;
-	width: 100%;
-}
+<style scoped>
+@import url(./mainDialogue.less);
 </style>

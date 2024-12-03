@@ -17,22 +17,6 @@ const hoverHandle = () => {
 }
 </script>
 
-<style>
-.history-list {
-	display: flex;
-	width: 100%;
-	height: 30px;
-
-	font-size: 20px;
-	font-family: sans-serif;
-}
-.history-list-title-description {
-	overflow: hidden;
-	white-space: nowrap;
-	/* text-overflow: ellipsis; */
-	flex: 1;
-}
-.history-list-handle {
-	margin-right: 5px;
-}
+<style scoped>
+@import url(./historyList.less);
 </style>
