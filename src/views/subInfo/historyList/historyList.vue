@@ -2,7 +2,7 @@
 	<div :class="`${ns}`">
 		<span :class="`${ns}-title-description`">{{ data.talkTitle }}</span>
 		<!-- ...的操作按钮 -->
-		<span :class="`${ns}-handle`" @click="hoverHandle">...</span>
+		<span :class="`${ns}-handle`" @click="hoverHandle">&nbsp;&nbsp;...</span>
 	</div>
 </template>
 
@@ -29,7 +29,7 @@ const hoverHandle = () => {
 .history-list-title-description {
 	overflow: hidden;
 	white-space: nowrap;
-	text-overflow: ellipsis;
+	/* text-overflow: ellipsis; */
 	flex: 1;
 }
 .history-list-handle {
