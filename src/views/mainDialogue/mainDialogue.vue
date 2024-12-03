@@ -9,11 +9,10 @@
 			</div>
 		</div>
 		<div :class="`${ns}-input`">
-			<el-input
-				v-model="inputInfo"
-				placeholder="请输入"
-				:prefix-icon="Search"
-				clearable>
+			<el-input v-model="inputInfo" placeholder="请输入" clearable>
+				<template #prefix>
+					<el-icon><Search /></el-icon>
+				</template>
 			</el-input>
 		</div>
 	</div>

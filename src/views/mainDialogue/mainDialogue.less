@@ -49,32 +49,42 @@
 }
 
 /* 以下是针对element-plus的修改 */
+/* ::deep .el-input {
+	border: none;
+} */
 .main-dialogue-input .el-input {
-	display: block;
-/* 	justify-content: center;
-	align-items: center; */
-	width: 600px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	height: 50px;
+	border-radius: 8px;
+	border: 1px solid black;
 }
 .main-dialogue-input .el-input .el-input__wrapper {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
+
 .main-dialogue-input .el-input .el-input__wrapper .el-input__inner {
-	width: 600px;
+	width: 800px;
 	height: 50px;
+	border: none !important;
+	background-color: transparent;
+
+	&:focus {
+		outline: none !important;
+	}
 }
 .main-dialogue-input .el-input .el-input__wrapper .el-input__prefix {
-	width: 30px;
-	height: 30px;
-}
-/* .main-dialogue-input .el-input .el-input__wrapper .el-input__prefix .el-input__prefix-inner {
-	width: 30px;
-	height: 30px;
-} */
-/* ::v-deep .el-input__inner {
-	display: block;
-	width: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
 	height: 50px;
-} */
+
+	> .el-input__prefix-inner {
+		width: 30px;
+		height: 30px;
+	}
+}
