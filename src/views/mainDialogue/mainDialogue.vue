@@ -20,8 +20,8 @@
 
 <script setup lang="ts">
 import singleDialogue from './singleDialogue/singleDialogue.vue'
-import {Search} from '@element-plus/icons-vue'
-import {ref} from 'vue'
+import { Search } from '@element-plus/icons-vue'
+import { ref } from 'vue'
 
 const ns = 'main-dialogue'
 const inputInfo = ref('')

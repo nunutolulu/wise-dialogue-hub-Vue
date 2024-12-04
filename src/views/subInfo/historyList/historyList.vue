@@ -2,7 +2,9 @@
 	<div :class="`${ns}`">
 		<span :class="`${ns}-title-description`">{{ data.talkTitle }}</span>
 		<!-- ...的操作按钮 -->
-		<span :class="`${ns}-handle`" @click="hoverHandle">&nbsp;&nbsp;...</span>
+		<span :class="`${ns}-handle`" @click="hoverHandle"
+			>&nbsp;&nbsp;...</span
+		>
 	</div>
 </template>
 

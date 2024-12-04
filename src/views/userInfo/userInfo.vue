@@ -29,8 +29,8 @@
 </template>
 
 <script setup lang="ts">
-import {userInfoMockData} from './config'
-import {UserFilled, ArrowDown} from '@element-plus/icons-vue'
+import { userInfoMockData } from './config'
+import { UserFilled, ArrowDown } from '@element-plus/icons-vue'
 // import { ElMessage } from 'element-plus'
 const ns = 'userInfo'
 

@@ -33,8 +33,8 @@
 <script setup lang="ts">
 import historyList from './historyList/historyList.vue'
 import userInfo from '../userInfo/userInfo.vue'
-import {historyListMockData} from './config'
-import {onMounted} from 'vue'
+import { historyListMockData } from './config'
+import { onMounted } from 'vue'
 
 const ns = 'subInfo'
 
