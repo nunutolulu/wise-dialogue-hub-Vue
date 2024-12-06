@@ -12,7 +12,7 @@ module.exports = {
 	'plugins': ['vue', '@typescript-eslint'],
 	'rules': {
 		'indent': 0,
-        // 允许花括号有空格
+		// 允许花括号有空格
 		'object-curly-spacing': ['error', 'always'],
 		// 去除方法名和括号间的空格
 		'space-before-function-paren': 0,
