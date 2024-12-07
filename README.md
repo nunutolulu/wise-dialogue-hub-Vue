@@ -11,3 +11,6 @@
 ## 测试
 
 `npm run test`
+
+
+API参考：[扣子 - 开发指南](https://www.coze.cn/docs/developer_guides/api_overview)
